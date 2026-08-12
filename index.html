@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmaFlow | O Catálogo Digital com Automação para Farmácias</title>
+    
+    <!-- Open Graph / WhatsApp Preview -->
+    <meta property="og:title" content="Catálogo Digital Oficial - Drogaria">
+    <meta property="og:description" content="Acesse nossas ofertas relâmpago e monte seu pedido com total segurança direto pelo celular.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="og:url" content="https://farmaflow.nexoia.online">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Catálogo Digital Oficial - Drogaria">
+    <meta name="twitter:description" content="Acesse nossas ofertas relâmpago e monte seu pedido com total segurança direto pelo celular.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #0F172A; /* Azul Escuro corporativo */
+            --color-primary-light: #1E293B;
+            --color-accent: #10B981; /* Verde Esmeralda vibrante */
+            --color-accent-hover: #059669;
+            --color-accent-light: #D1FAE5;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #F8FAFC;
+            color: #334155;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="activity" class="w-8 h-8 text-accent"></i>
+                    <span class="font-bold text-2xl text-primary tracking-tight">Farma<span class="text-accent">Flow</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#funcionalidades" class="text-slate-600 hover:text-primary transition-colors font-medium">Funcionalidades</a>
+                    <a href="#historia" class="text-slate-600 hover:text-primary transition-colors font-medium">Nossa História</a>
+                    <a href="#planos" class="text-slate-600 hover:text-primary transition-colors font-medium">Planos</a>
+                    <a href="#faq" class="text-slate-600 hover:text-primary transition-colors font-medium">FAQ</a>
+                </div>
+                <div>
+                    <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="bg-accent hover:bg-accent-hover text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-accent/30 flex items-center gap-2">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Falar com Consultor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 hero-gradient text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium mb-8 text-slate-300">
+                <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+                O fim do caos no WhatsApp da sua farmácia
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight max-w-4xl mx-auto">
+                Pare de Perder Vendas por <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-emerald-300">Demora no Atendimento</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Um catálogo digital inteligente que automatiza o fluxo de pedidos para o seu WhatsApp, com ofertas relâmpago dinâmicas e experiência de compra ultrarrápida.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="w-full sm:w-auto bg-accent hover:bg-accent-hover text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-accent/40 flex items-center justify-center gap-2 transform hover:scale-105">
+                    <i data-lucide="rocket" class="w-6 h-6"></i>
+                    Quero Automatizar Minhas Vendas
+                </a>
+            </div>
+
+            <!-- Dashboard Preview / Mockup abstraction -->
+            <div class="mt-16 relative perspective-1000">
+                <div class="w-full max-w-4xl mx-auto bg-slate-800 rounded-2xl border border-slate-700 shadow-2xl overflow-hidden shadow-black/50 transform rotate-x-12 translate-y-4 hover:rotate-x-0 hover:translate-y-0 transition-all duration-500 delay-100 ease-out">
+                    <!-- Top bar -->
+                    <div class="h-8 bg-slate-900 border-b border-slate-700 flex items-center px-4 gap-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <!-- Body -->
+                    <div class="p-4 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-6 bg-[#F8FAFC]">
+                        <div class="md:col-span-2 space-y-4">
+                            <div class="h-10 bg-white rounded flex items-center px-4 justify-between shadow-sm">
+                                <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">Oferta Relâmpago Expirando</span>
+                                <span class="text-primary font-mono font-bold text-sm">00:15:42</span>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col justify-between border border-slate-100 hover:shadow-md transition-shadow">
+                                    <img src="/src/assets/images/oferta_relampago_1780170050806.png" alt="Oferta Relâmpago (15% OFF)" referrerPolicy="no-referrer" class="w-full h-32 object-cover">
+                                    <div class="p-3 bg-white">
+                                        <span class="text-[10px] font-bold text-red-600 bg-red-50 px-1.5 py-0.5 rounded">Ativo em Tempo Real</span>
+                                        <div class="h-3 bg-slate-200 rounded w-3/4 mt-2 mb-1.5"></div>
+                                        <div class="h-3.5 bg-emerald-50 text-emerald-600 font-bold text-xs rounded w-1/2 flex items-center px-1">15% Desconto</div>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col justify-between border border-slate-100 hover:shadow-md transition-shadow">
+                                    <img src="/src/assets/images/cupom_desconto_1780170070187.png" alt="Cupom de Desconto (IMPOSTOZERO)" referrerPolicy="no-referrer" class="w-full h-32 object-cover">
+                                    <div class="p-3 bg-white">
+                                        <span class="text-[10px] font-bold text-accent bg-emerald-50 px-1.5 py-0.5 rounded">Código Ativado</span>
+                                        <div class="h-3 bg-slate-200 rounded w-3/4 mt-2 mb-1.5"></div>
+                                        <div class="h-3.5 bg-slate-900 text-white font-mono text-[10px] rounded w-2/3 flex items-center justify-center">Cupom: IMPOSTOZERO</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm p-4 text-left flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-slate-700 mb-4 text-sm">Pedido via WhatsApp</h3>
+                                <div class="space-y-3">
+                                    <div class="h-10 bg-green-50 rounded-lg flex items-center px-3 border border-green-100"><span class="text-green-700 text-xs font-medium truncate">✓ Lista otimizada enviada</span></div>
+                                </div>
+                            </div>
+                            <div class="mt-8">
+                                <div class="h-10 bg-accent rounded-lg flex items-center justify-center text-white font-medium text-sm"><i data-lucide="send" class="w-4 h-4 mr-2"></i> Enviar Pedido</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Pré-Cadastro -->
+    <section class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 border border-slate-250 rounded-3xl p-6 sm:p-10 shadow-lg -mt-16 relative z-20">
+                <div id="leadFormWrapper">
+                    <div class="text-center md:text-left md:flex md:items-center md:justify-between gap-8">
+                        <div class="mb-6 md:mb-0 max-w-sm">
+                            <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">Pré-Cadastro Rápido</span>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Falar com um Especialista</h3>
+                            <p class="text-slate-600 text-sm">
+                                Preencha os dados abaixo para ser redirecionado imediatamente com uma proposta ou agendar uma chamada.
+                            </p>
+                        </div>
+                        <form id="leadForm" class="flex-1 w-full space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="leadName" class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1.5">Seu Nome</label>
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                                            <i data-lucide="user" class="w-4 h-4"></i>
+                                        </div>
+                                        <input type="text" id="leadName" required placeholder="Ex: João Silva" class="block w-full pl-10 pr-3 py-2.5 bg-white border border-slate-200 rounded-xl text-slate-800 placeholder-slate-400 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent text-sm">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="leadWhatsapp" class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1.5">WhatsApp / Celular</label>
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                                            <i data-lucide="phone" class="w-4 h-4"></i>
+                                        </div>
+                                        <input type="tel" id="leadWhatsapp" required placeholder="Ex: (22) 99999-9999" class="block w-full pl-10 pr-3 py-2.5 bg-white border border-slate-200 rounded-xl text-slate-800 placeholder-slate-400 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent text-sm">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-white py-3 px-6 rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-md shadow-accent/20 cursor-pointer">
+                                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                                Garantir Minha Demonstração
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Success Message (Hidden by default) -->
+                <div id="leadSuccess" class="hidden text-center py-6">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="check" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-2">Pré-cadastro Realizado!</h4>
+                    <p class="text-slate-600 mb-4 max-w-md mx-auto">
+                        Obrigado, <span id="successName" class="font-bold"></span>! Suas informações foram enviadas. Você está sendo redirecionado para o WhatsApp do Evandro em instantes para sua demonstração...
+                    </p>
+                    <span class="text-xs text-slate-400">Caso precise forçar o redirecionamento, <a id="fallbackLink" href="#" target="_blank" class="text-accent underline font-semibold">clique aqui</a>.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como o Cliente Ganha Tempo -->
+    <section class="py-20 bg-white" id="experiencia">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent font-bold tracking-wider uppercase text-sm">Experiência do Cliente (UX)</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mt-4 mb-4">Pedidos Concluídos em Segundos, Não em Minutos</h2>
+                <p class="text-slate-600 text-lg">Acabe com a troca de 10 mensagens apenas para saber o preço de um remédio. Seu cliente monta o carrinho sozinho e você só recebe o pedido com tudo pronto.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm relative hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-100 mb-6 absolute -top-7 left-8">
+                        <span class="text-2xl font-black text-accent">1</span>
+                    </div>
+                    <div class="mb-4 text-accent"><i data-lucide="smartphone" class="w-10 h-10"></i></div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Catálogo Dinâmico</h3>
+                    <p class="text-slate-600 leading-relaxed">O cliente clica no link do seu Instagram ou WhatsApp e acessa instantaneamente uma vitrine rápida, organizada por departamentos.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm relative hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-100 mb-6 absolute -top-7 left-8">
+                        <span class="text-2xl font-black text-accent">2</span>
+                    </div>
+                    <div class="mb-4 text-accent"><i data-lucide="check-square" class="w-10 h-10"></i></div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Carrinho Sem Fricção</h3>
+                    <p class="text-slate-600 leading-relaxed">Ele seleciona as ofertas relâmpago, medicamentos ou vitaminas que precisa, vendo em tempo real o preço final da compra.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm relative hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-100 mb-6 absolute -top-7 left-8">
+                        <span class="text-2xl font-black text-accent">3</span>
+                    </div>
+                    <div class="mb-4 text-green-500"><i data-lucide="message-circle-code" class="w-10 h-10"></i></div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Direto no WhatsApp</h3>
+                    <p class="text-slate-600 leading-relaxed">Com um clique, o sistema organiza os produtos, os valores e envia uma mensagem formatada direto para o WhatsApp do seu balcão. É só faturar!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa de Funcionalidades -->
+    <section class="py-24 bg-slate-50 border-y border-slate-200" id="funcionalidades">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-accent font-bold tracking-wider uppercase text-sm">O motor do seu crescimento</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mt-4 mb-4">Funcionalidades do FarmaFlow</h2>
+                <p class="text-slate-600 text-lg">Tecnologia desenvolvida especificamente para a realidade ágil do varejo farmacêutico.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1.5 group overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6 text-red-600">
+                            <i data-lucide="timer" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Módulo de Oferta Relâmpago</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Gatilho de urgência imbatível. Crie ofertas com cronômetro regressivo dinâmico. Tecnologia <strong>Realtime</strong>: quando o tempo expira, o preço promocional some automaticamente da Home, da página do produto e do carrinho, sem chance para o cliente burlar.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i>Desconto visível calculado no ato</li>
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i>Evita atritos no balcão por promoções antigas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1.5 group overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                            <i data-lucide="filter" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Filtro Avançado de Campanhas</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Navegação cirúrgica. Ao clicar no banner de Oferta Relâmpago no topo do site, o sistema filtra a loja online na hora, isolando na tela <strong>apenas</strong> os produtos participantes, para que o cliente não perca tempo buscando.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-blue-500 mr-2"></i>Aumenta a conversão da campanha</li>
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-blue-500 mr-2"></i>UX focada no fechamento rápido</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1.5 group overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 text-emerald-600">
+                            <i data-lucide="layout-grid" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Gestão de Catálogo Simplificada</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Feito para não depender do T.I. Organização profissional por Departamentos e Subcategorias com uma interface limpa de Mapeamento em Massa. Liberdade total para criar, editar ou excluir dezenas de itens rapidamente, mantendo sua vitrine sempre limpa.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i>Operações CRUD completas e intuitivas</li>
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i>Edição em massa sem travar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-purple-500 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1.5 group overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-50 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-purple-600">
+                            <i data-lucide="database-zap" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Portabilidade de Dados Master</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">No painel Super Admin (de alta velocidade e blindado contra vazamentos em ambiente multi-tenant), baixe um backup de segurança completo. Permite clonar o catálogo integral (com árvore de Departamentos/Subcategorias) para novas filiais num clique.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-purple-500 mr-2"></i>Expansão de franquias facilitada</li>
+                            <li class="flex items-center text-sm text-slate-500"><i data-lucide="check" class="w-4 h-4 text-purple-500 mr-2"></i>Segurança 100% cloud dos seus produtos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-xl">
+                    Agendar uma Demonstração
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Criou / Autoridade -->
+    <section class="py-24 bg-white" id="historia">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid md:grid-cols-2 flex-col-reverse md:flex-row">
+                    <div class="p-10 md:p-16 flex flex-col justify-center">
+                        <span class="text-accent font-bold tracking-wider uppercase text-sm mb-4">De Farmacêutico para Farmacêutico</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">"Eu sei a dor de ver o faturamento escorrer pelo balcão"</h2>
+                        
+                        <div class="space-y-6 text-slate-300 leading-relaxed text-lg">
+                            <p>
+                                O FarmaFlow não foi criado por programadores que nunca pisaram em uma drogaria. Foi idealizado por <strong>Evandro Luiz Cabral da Silva</strong>, farmacêutico com anos de "chão de loja".
+                            </p>
+                            <p>
+                                Evandro viveu na pele o sufoco do dia a dia: dezenas de mensagens acumulando no WhatsApp, clientes impacientes, atendentes perdendo tempo digitando preços e a impossibilidade real de mostrar todas as ofertas do dia para quem chegava no chat. Vendas (e dinheiro) eram perdidos a cada minuto de demora.
+                            </p>
+                            <p>
+                                Cansado desse caos, ele uniu sua expertise de varejo com tecnologia de ponta para fundar o FarmaFlow. A missão? Criar uma plataforma elegante onde o dono da farmácia exibe as melhores ofertas e automatiza orçamentos de forma tão simples, que um cliente compra em segundos o que antes demorava dez minutos.
+                            </p>
+                        </div>
+
+                        <div class="mt-10 border-t border-slate-700 pt-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 bg-gradient-to-r from-accent to-emerald-400 rounded-full flex items-center justify-center p-1">
+                                    <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center overflow-hidden">
+                                        <!-- Fallback Avatar since we don't have a real photo. Uses Lucide User -->
+                                        <i data-lucide="user" class="w-8 h-8 text-slate-400"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-lg">Evandro Luiz Cabral da Silva</p>
+                                    <p class="text-accent text-sm font-medium">Fundador & Farmacêutico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagem representativa -->
+                    <div class="relative bg-slate-800 min-h-[300px] md:min-h-full">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'); opacity: 0.4;"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos e Preços -->
+    <section class="py-24 bg-slate-50" id="planos">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent font-bold tracking-wider uppercase text-sm">Investimento transparente</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mt-4 mb-4">Escolha o plano ideal para sua farmácia</h2>
+                <p class="text-slate-600 text-lg">Assinatura no modelo SaaS. Sem taxas ocultas. Liberdade para crescer.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
+                <!-- Plano Mensal -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <h3 class="text-xl font-bold text-primary mb-2">Mensal</h3>
+                    <p class="text-slate-500 text-sm mb-6 h-10">Flexibilidade total. Sem fidelidade.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-primary">R$ 197</span>
+                        <span class="text-slate-500">/mês</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex text-sm text-slate-700"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Todas as funcionalidades inclusas</li>
+                        <li class="flex text-sm text-slate-700"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Catálogo sem limites</li>
+                        <li class="flex text-sm text-slate-700"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Suporte pelo WhatsApp</li>
+                    </ul>
+                    <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="block w-full py-3 px-4 bg-slate-100 hover:bg-slate-200 text-primary font-bold rounded-xl text-center transition-colors">Assinar Mensal</a>
+                </div>
+
+                <!-- Plano Anual (Destaque) -->
+                <div class="bg-primary rounded-3xl p-8 border border-primary-light shadow-2xl transform md:-translate-y-4 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Mais Escolhido
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Anual</h3>
+                    <p class="text-slate-400 text-sm mb-6 h-10">O maior desconto para quem pensa a longo prazo.</p>
+                    <div class="mb-6">
+                        <span class="line-through text-slate-500 text-lg mr-2">R$ 197</span>
+                        <span class="text-4xl font-black text-white">R$ 159</span>
+                        <span class="text-slate-400">/mês</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex text-sm text-slate-200"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Todas as funcionalidades inclusas</li>
+                        <li class="flex text-sm text-slate-200"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Cobrança única anual (R$ 1908)</li>
+                        <li class="flex text-sm text-slate-200"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Atendimento prioritário</li>
+                    </ul>
+                    <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="block w-full py-3 px-4 bg-accent hover:bg-accent-hover text-white font-bold rounded-xl text-center transition-colors shadow-lg shadow-accent/20">Garantir Desconto Anual</a>
+                </div>
+
+                <!-- Plano Semestral -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <h3 class="text-xl font-bold text-primary mb-2">Semestral</h3>
+                    <p class="text-slate-500 text-sm mb-6 h-10">Equilíbrio perfeito de economia.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-primary">R$ 177</span>
+                        <span class="text-slate-500">/mês</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex text-sm text-slate-700"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Todas as funcionalidades inclusas</li>
+                        <li class="flex text-sm text-slate-700"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Cobrança a cada 6 meses</li>
+                        <li class="flex text-sm text-slate-700"><i data-lucide="check" class="w-5 h-5 text-accent mr-3 shrink-0"></i>Suporte pelo WhatsApp</li>
+                    </ul>
+                    <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="block w-full py-3 px-4 bg-slate-100 hover:bg-slate-200 text-primary font-bold rounded-xl text-center transition-colors">Assinar Semestral</a>
+                </div>
+            </div>
+
+            <!-- Box Indicação -->
+            <div class="mt-16 max-w-4xl mx-auto bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm">
+                <div class="w-20 h-20 shrink-0 bg-white rounded-2xl shadow-sm text-accent flex items-center justify-center border border-emerald-100">
+                    <i data-lucide="gift" class="w-10 h-10 text-emerald-600"></i>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Programa de Crescimento: Indicação Lucrativa</h3>
+                    <p class="text-slate-600">
+                        O bom trabalho deve ser recompensado. Ao ser nosso cliente e indicar outras farmácias para o sistema FarmaFlow, você pode ganhar <strong>até 30% de desconto definitivo na sua própria mensalidade</strong>. Crescemos juntos.
+                    </p>
+                </div>
+                <div>
+                     <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="whitespace-nowrap inline-flex py-3 px-6 bg-white border border-slate-200 hover:border-accent text-primary font-bold rounded-full transition-all shadow-sm">Saiba as Regras</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-white" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-primary">Perguntas Frequentes (FAQ)</h2>
+                <p class="text-slate-600 mt-4">Tudo o que você precisa saber antes de automatizar sua drogaria.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="group bg-slate-50 border border-slate-200 rounded-2xl open:bg-white open:border-accent/30 open:shadow-md transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-primary text-lg">
+                        <span>A Oferta Relâmpago atualiza mesmo se o cliente já estiver no site?</span>
+                        <span class="transition group-open:rotate-180 text-slate-400 group-open:text-accent">
+                            <i data-lucide="chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 p-6 pt-0 leading-relaxed border-t border-slate-100">
+                        Sim! Utilizamos tecnologia Realtime. Se o cronômetro zerar, a promoção expira instantaneamente, sumindo da página e do carrinho do usuário. O preço volta ao normal sem a necessidade dele atualizar a página, impossibilitando fraudes na compra promocional.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="group bg-slate-50 border border-slate-200 rounded-2xl open:bg-white open:border-accent/30 open:shadow-md transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-primary text-lg">
+                        <span>É fácil cadastrar os produtos? Não tenho equipe de T.I.</span>
+                        <span class="transition group-open:rotate-180 text-slate-400 group-open:text-accent">
+                            <i data-lucide="chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 p-6 pt-0 leading-relaxed border-t border-slate-100">
+                        Totalmente. O FarmaFlow foi desenhado por um farmacêutico, feito para não depender de suporte técnico. O Mapeamento em Massa permite organizar departamentos e subcategorias de forma visual, com ferramentas simples de aprovação (CRUD) que qualquer pessoa da equipe pode operar.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="group bg-slate-50 border border-slate-200 rounded-2xl open:bg-white open:border-accent/30 open:shadow-md transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-primary text-lg">
+                        <span>E se eu quiser abrir outra loja, perco o cadastro atual?</span>
+                        <span class="transition group-open:rotate-180 text-slate-400 group-open:text-accent">
+                            <i data-lucide="chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 p-6 pt-0 leading-relaxed border-t border-slate-100">
+                        Não. Nosso painel Super Admin possui um sistema de Portabilidade de Dados Master. Você pode exportar seu catálogo integral (com a árvore de relações das categorias) como um backup de segurança e cloná-lo para sua nova filial de forma íntegra.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4 -->
+                <details class="group bg-slate-50 border border-slate-200 rounded-2xl open:bg-white open:border-accent/30 open:shadow-md transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-primary text-lg">
+                        <span>Como funciona o desconto por indicação?</span>
+                        <span class="transition group-open:rotate-180 text-slate-400 group-open:text-accent">
+                            <i data-lucide="chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 p-6 pt-0 leading-relaxed border-t border-slate-100">
+                        Como cliente FarmaFlow, você pode indicar outras farmácias para fechar parceria conosco. Cada indicação válida gera bônus cumulativos, podendo chegar a até 30% de desconto abatidos direto no valor da sua mensalidade contratada.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="py-20 hero-gradient relative">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Pronto para dobrar as vendas no WhatsApp?</h2>
+            <p class="text-slate-300 mb-10 text-lg">Junte-se às drogarias que automatizaram o atendimento e voltaram a dar foco no que importa.</p>
+            <a href="https://wa.me/5522981552881?text=Ol%C3%A1%20Evandro,%20gostaria%20de%20conhecer%20os%20planos%20do%20FarmaFlow%20para%20a%20minha%20farm%C3%A1cia!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-emerald-400 text-white px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl shadow-accent/30 transform hover:scale-105">
+                Quero Contratar Agora
+                <i data-lucide="rocket" class="w-6 h-6"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-16 pb-8 border-t border-slate-800 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="activity" class="w-6 h-6 text-accent"></i>
+                    <span class="font-bold text-xl text-white tracking-tight">Farma<span class="text-accent">Flow</span></span>
+                </div>
+                <div class="text-sm">
+                    Um produto desenvolvido por <strong class="text-white">nexoIa</strong>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2026 FarmaFlow e nexoIa. Todos os direitos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Termos de Uso</a>
+                    <a href="#" class="hover:text-white transition">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+
+        // Lead Form Handler
+        const leadForm = document.getElementById('leadForm');
+        const leadFormWrapper = document.getElementById('leadFormWrapper');
+        const leadSuccess = document.getElementById('leadSuccess');
+        const successName = document.getElementById('successName');
+        const fallbackLink = document.getElementById('fallbackLink');
+
+        if (leadForm) {
+            leadForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('leadName').value.trim();
+                const whatsapp = document.getElementById('leadWhatsapp').value.trim();
+                
+                if (name && whatsapp) {
+                    // Update UI
+                    successName.textContent = name;
+                    leadFormWrapper.classList.add('hidden');
+                    leadSuccess.classList.remove('hidden');
+                    
+                    // Create formatted WhatsApp URL
+                    const message = `Olá Evandro, meu nome é ${name} e meu WhatsApp é ${whatsapp}. Realizei o pré-cadastro na página do FarmaFlow e gostaria de conhecer os planos e a demonstração do sistema!`;
+                    const whatsappUrl = `https://wa.me/5522981552881?text=${encodeURIComponent(message)}`;
+                    
+                    fallbackLink.href = whatsappUrl;
+                    
+                    // Auto redirect after a short delay
+                    setTimeout(() => {
+                        window.open(whatsappUrl, '_blank');
+                    }, 1500);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "FarmaFlow Landing Page",
+  "description": "A single-page HTML landing page for FarmaFlow with CDN Tailwind CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
