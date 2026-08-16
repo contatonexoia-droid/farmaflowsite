@@ -1,6 +1,6 @@
 {
-  "name": "FarmaFlow Landing Page",
-  "description": "A single-page HTML landing page for FarmaFlow with CDN Tailwind CSS.",
+  "name": "FarmaFlow | Catálogo Digital & Automação de Vendas para Farmácias",
+  "description": "Landing page SaaS premium e interativa do FarmaFlow para drogarias e farmácias, com catálogo inteligente, módulo de receitas controladas e automação de vendas no WhatsApp.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
