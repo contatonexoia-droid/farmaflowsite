@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { AppScreenshotsShowcase } from './components/AppScreenshotsShowcase';
 import { StoryChaosVsControl } from './components/StoryChaosVsControl';
 import { PrescriptionModule } from './components/PrescriptionModule';
 import { FeatureShowcase } from './components/FeatureShowcase';
@@ -31,28 +32,31 @@ export function App() {
         {/* 1. Hero with Interactive Product Simulator */}
         <Hero />
 
-        {/* 2. Storytelling: Caos do Balcão vs Alta Performance FarmaFlow */}
+        {/* 2. Telas Reais do Aplicativo FarmaFlow (10 Telas do Sistema) */}
+        <AppScreenshotsShowcase />
+
+        {/* 3. Storytelling: Caos do Balcão vs Alta Performance FarmaFlow */}
         <StoryChaosVsControl />
 
-        {/* 3. Módulo de Receitas para Medicamentos Controlados & SNGPC */}
+        {/* 4. Módulo de Receitas para Medicamentos Controlados */}
         <PrescriptionModule />
 
-        {/* 4. Ecossistema Completo de Funcionalidades */}
+        {/* 5. Ecossistema Completo de Funcionalidades */}
         <FeatureShowcase />
 
-        {/* 5. Calculadora Interativa de Retorno sobre Investimento */}
+        {/* 6. Calculadora Interativa de Retorno sobre Investimento */}
         <InteractiveRoiCalculator />
 
-        {/* 6. Planos & Preços Transparentes */}
+        {/* 7. Planos & Preços Transparentes */}
         <PricingSection />
 
-        {/* 7. Prova Social & Depoimentos Reais */}
+        {/* 8. Prova Social & Depoimentos Reais */}
         <SocialProof />
 
-        {/* 8. FAQ com Busca Instantânea */}
+        {/* 9. FAQ com Busca Instantânea */}
         <FaqSection />
 
-        {/* 9. Final High-Converting CTA Banner */}
+        {/* 10. Final High-Converting CTA Banner */}
         <CtaBanner />
       </main>
 
