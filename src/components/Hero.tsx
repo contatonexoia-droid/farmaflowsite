@@ -17,8 +17,7 @@ import {
   Flame,
   Bot,
   User,
-  Check,
-  Smartphone
+  Check
 } from 'lucide-react';
 import { getWhatsAppLink, sampleProducts, samplePrescriptions } from '../data/content';
 import vitaminaCImg from '../assets/images/vitamina_c_suplemento_1786878956085.jpg';
@@ -103,19 +102,11 @@ export const Hero: React.FC = () => {
           </a>
 
           <a
-            href="#telas-app"
-            className="w-full sm:w-auto px-7 py-4 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-cyan-500/40 hover:border-cyan-400 text-cyan-300 hover:text-white font-semibold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 backdrop-blur-md shadow-lg shadow-cyan-950/50"
-          >
-            <Smartphone className="w-4 h-4 text-cyan-400" />
-            <span>Ver Telas do Aplicativo</span>
-          </a>
-
-          <a
             href="#modulo-receitas"
-            className="w-full sm:w-auto px-6 py-4 rounded-full bg-slate-900/60 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 backdrop-blur-md"
+            className="w-full sm:w-auto px-7 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-500/50 text-slate-200 hover:text-white font-semibold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 backdrop-blur-md"
           >
             <Sparkles className="w-4 h-4 text-cyan-400" />
-            <span>Módulo de Receitas</span>
+            <span>Ver Módulo de Receitas</span>
           </a>
         </div>
 

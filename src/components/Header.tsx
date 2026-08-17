@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, MessageCircle, Menu, X, ChevronRight, Sparkles, Smartphone } from 'lucide-react';
+import { Activity, MessageCircle, Menu, X, ChevronRight, Sparkles } from 'lucide-react';
 import { getWhatsAppLink } from '../data/content';
-import farmaflowLogo from '../assets/images/farmaflow/logo.png';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +15,6 @@ export const Header: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Telas do App', href: '#telas-app', highlight: true },
     { label: 'Funcionalidades', href: '#funcionalidades' },
     { label: 'Módulo de Receitas', href: '#modulo-receitas' },
     { label: 'Caos vs FarmaFlow', href: '#comparativo' },
@@ -32,19 +30,16 @@ export const Header: React.FC = () => {
           id="main-navigation"
           className={`glass-panel rounded-full transition-all duration-300 flex items-center justify-between border ${
             isScrolled 
-              ? 'py-2 px-5 bg-slate-950/90 shadow-2xl shadow-cyan-950/40 border-cyan-500/20 backdrop-blur-2xl' 
-              : 'py-2.5 px-6 bg-slate-950/70 shadow-xl shadow-black/60 border-slate-800/80 backdrop-blur-xl'
+              ? 'py-2.5 px-5 bg-slate-950/90 shadow-2xl shadow-cyan-950/40 border-cyan-500/20 backdrop-blur-2xl' 
+              : 'py-3.5 px-6 bg-slate-950/70 shadow-xl shadow-black/60 border-slate-800/80 backdrop-blur-xl'
           }`}
         >
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="h-9 sm:h-10 rounded-xl overflow-hidden flex items-center justify-center p-1 bg-slate-900 border border-slate-800 group-hover:border-cyan-500/50 transition-all shadow-md">
-              <img 
-                src={farmaflowLogo} 
-                alt="FarmaFlow Logo" 
-                className="h-full w-auto object-contain"
-                referrerPolicy="no-referrer"
-              />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-teal-400 to-emerald-400 p-0.5 flex items-center justify-center shadow-lg shadow-cyan-500/25 group-hover:shadow-cyan-500/50 group-hover:scale-105 transition-all">
+              <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                <Activity className="w-5 h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
+              </div>
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
