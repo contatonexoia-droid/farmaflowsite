@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Menu, X, ChevronRight, Sparkles } from 'lucide-react';
 import { getWhatsAppLink } from '../data/content';
-import logoImg from '../assets/images/logo.png';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +38,7 @@ export const Header: React.FC = () => {
           <a href="#" className="flex items-center gap-2.5 group">
             <div className="h-9 sm:h-10 flex items-center">
               <img 
-                src={logoImg} 
+                src="https://i.postimg.cc/pVzNnT3b/file-0000000000cc820eb03e0bab6fe634f2.png" 
                 alt="FarmaFlow Logo" 
                 className="h-8 sm:h-9 w-auto max-w-[140px] sm:max-w-[170px] object-contain transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"

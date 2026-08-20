@@ -1,7 +1,6 @@
 import React from 'react';
 import { MessageCircle, Heart, ArrowUp } from 'lucide-react';
 import { getWhatsAppLink } from '../data/content';
-import logoImg from '../assets/images/logo.png';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -18,7 +17,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src={logoImg} 
+                src="https://i.postimg.cc/pVzNnT3b/file-0000000000cc820eb03e0bab6fe634f2.png" 
                 alt="FarmaFlow Logo" 
                 className="h-8 sm:h-9 w-auto max-w-[150px] object-contain"
                 referrerPolicy="no-referrer"

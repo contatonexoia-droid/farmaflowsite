@@ -1,7 +1,6 @@
 import React from 'react';
 import { Award, ShieldCheck, HeartPulse, Sparkles, TrendingUp, Zap, Clock, CheckCircle2, MessageSquareCode } from 'lucide-react';
 import { pharmacyMetrics } from '../data/content';
-import evandroPortrait from '../assets/images/evandro.jpg';
 
 export const SocialProof: React.FC = () => {
   return (
@@ -78,7 +77,7 @@ export const SocialProof: React.FC = () => {
             <div className="sm:col-span-4 text-center sm:text-left flex flex-col items-center sm:items-start">
               <div className="relative inline-block group">
                 <img
-                  src={evandroPortrait}
+                  src="https://i.postimg.cc/yx3grCZw/IMG-20260816-WA0000.jpg"
                   alt="Evandro Luiz Cabral da Silva - Farmacêutico e Desenvolvedor do FarmaFlow"
                   className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl object-cover border-2 border-cyan-400/60 shadow-xl shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
