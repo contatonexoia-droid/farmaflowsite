@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, MessageCircle, Menu, X, ChevronRight, Sparkles } from 'lucide-react';
+import { MessageCircle, Menu, X, ChevronRight, Sparkles } from 'lucide-react';
 import { getWhatsAppLink } from '../data/content';
+import logoImg from '../assets/images/logo.png';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,26 +36,19 @@ export const Header: React.FC = () => {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-teal-400 to-emerald-400 p-0.5 flex items-center justify-center shadow-lg shadow-cyan-500/25 group-hover:shadow-cyan-500/50 group-hover:scale-105 transition-all">
-              <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                <Activity className="w-5 h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
-              </div>
+          <a href="#" className="flex items-center gap-2.5 group">
+            <div className="h-9 sm:h-10 flex items-center">
+              <img 
+                src={logoImg} 
+                alt="FarmaFlow Logo" 
+                className="h-8 sm:h-9 w-auto max-w-[140px] sm:max-w-[170px] object-contain transition-transform duration-300 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-heading font-extrabold text-xl text-white tracking-tight">
-                  Farma<span className="text-cyan-400">Flow</span>
-                </span>
-                <span className="flex h-2 w-2 relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </span>
-              </div>
-              <span className="text-[9px] font-mono uppercase tracking-wider text-slate-400 -mt-1 hidden sm:block">
-                Tecnologia Farmacêutica
-              </span>
-            </div>
+            <span className="flex h-2 w-2 relative self-center">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
           </a>
 
           {/* Desktop Navigation Links */}

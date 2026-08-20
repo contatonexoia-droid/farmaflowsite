@@ -1,7 +1,7 @@
 import React from 'react';
 import { Award, ShieldCheck, HeartPulse, Sparkles, TrendingUp, Zap, Clock, CheckCircle2, MessageSquareCode } from 'lucide-react';
 import { pharmacyMetrics } from '../data/content';
-import evandroPortrait from '../assets/images/evandro_original_raw_1786873248805.jpg';
+import evandroPortrait from '../assets/images/evandro.jpg';
 
 export const SocialProof: React.FC = () => {
   return (

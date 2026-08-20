@@ -1,6 +1,7 @@
 import React from 'react';
-import { Activity, MessageCircle, Heart, ArrowUp } from 'lucide-react';
+import { MessageCircle, Heart, ArrowUp } from 'lucide-react';
 import { getWhatsAppLink } from '../data/content';
+import logoImg from '../assets/images/logo.png';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -15,16 +16,14 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: Brand */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-0.5 flex items-center justify-center">
-                <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                  <Activity className="w-4 h-4 text-cyan-400" />
-                </div>
-              </div>
-              <span className="font-heading font-bold text-xl text-white tracking-tight">
-                Farma<span className="text-cyan-400">Flow</span>
-              </span>
-              <span className="text-[10px] font-mono uppercase bg-slate-900 text-slate-400 px-2 py-0.5 rounded border border-slate-800">
+            <div className="flex items-center gap-3">
+              <img 
+                src={logoImg} 
+                alt="FarmaFlow Logo" 
+                className="h-8 sm:h-9 w-auto max-w-[150px] object-contain"
+                referrerPolicy="no-referrer"
+              />
+              <span className="text-[10px] font-mono uppercase bg-slate-900 text-slate-400 px-2 py-0.5 rounded border border-slate-800 self-center">
                 by nexoIa
               </span>
             </div>
