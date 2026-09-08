@@ -2,8 +2,8 @@ import { PricingPlan, Testimonial, FaqItem, ProductItem, PrescriptionOrder, Phar
 import vitaminaCImg from '../assets/images/vitamina_c_suplemento_1786878956085.jpg';
 import protetorSolarImg from '../assets/images/protetor_solar_facial_1786878971904.jpg';
 
-export const WHATSAPP_NUMBER = '5521969657211';
-export const WHATSAPP_DISPLAY = '(21) 96965-7211';
+export const WHATSAPP_NUMBER = '5522981552881';
+export const WHATSAPP_DISPLAY = '(22) 98155-2881';
 export const WHATSAPP_URL_BASE = `https://wa.me/${WHATSAPP_NUMBER}?text=`;
 
 export const getWhatsAppLink = (message: string) => {
