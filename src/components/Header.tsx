@@ -15,12 +15,12 @@ export const Header: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Funcionalidades', href: '#funcionalidades' },
+    { label: 'A Solução', href: '#solucao' },
+    { label: 'Recursos', href: '#recursos' },
+    { label: 'Como Funciona', href: '#como-funciona' },
     { label: 'Módulo de Receitas', href: '#modulo-receitas' },
-    { label: 'Caos vs FarmaFlow', href: '#comparativo' },
-    { label: 'Calculadora ROI', href: '#calculadora' },
-    { label: 'Planos', href: '#planos' },
-    { label: 'FAQ', href: '#faq' },
+    { label: 'Comparativo', href: '#comparativo' },
+    { label: 'Dúvidas', href: '#duvidas' },
   ];
 
   return (

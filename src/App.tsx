@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { StoryChaosVsControl } from './components/StoryChaosVsControl';
+import { HowItWorks } from './components/HowItWorks';
 import { PrescriptionModule } from './components/PrescriptionModule';
 import { FeatureShowcase } from './components/FeatureShowcase';
 import { InteractiveRoiCalculator } from './components/InteractiveRoiCalculator';
@@ -31,10 +32,13 @@ export function App() {
         {/* 1. Hero with Interactive Product Simulator */}
         <Hero />
 
-        {/* 2. Storytelling: Caos do Balcão vs Alta Performance FarmaFlow */}
+        {/* 2. Storytelling: Dores Reais do Balcão, Transição & Comparativo Detalhado */}
         <StoryChaosVsControl />
 
-        {/* 3. Módulo de Receitas para Medicamentos Controlados & SNGPC */}
+        {/* 3. Como Funciona: 3 Passos Simples para o Cliente e a Farmácia */}
+        <HowItWorks />
+
+        {/* 4. Módulo de Receitas para Medicamentos Controlados & SNGPC */}
         <PrescriptionModule />
 
         {/* 4. Ecossistema Completo de Funcionalidades */}

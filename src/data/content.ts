@@ -1,8 +1,9 @@
-import { PricingPlan, Testimonial, FaqItem, ProductItem, PrescriptionOrder, PharmacyMetric } from '../types';
+import { PricingPlan, Testimonial, FaqItem, ProductItem, PrescriptionOrder, PharmacyMetric, PainPointItem, ComparisonRow, HowItWorksStep } from '../types';
 import vitaminaCImg from '../assets/images/vitamina_c_suplemento_1786878956085.jpg';
 import protetorSolarImg from '../assets/images/protetor_solar_facial_1786878971904.jpg';
 
-export const WHATSAPP_NUMBER = '5522981552881';
+export const WHATSAPP_NUMBER = '5521969657211';
+export const WHATSAPP_DISPLAY = '(21) 96965-7211';
 export const WHATSAPP_URL_BASE = `https://wa.me/${WHATSAPP_NUMBER}?text=`;
 
 export const getWhatsAppLink = (message: string) => {
@@ -253,6 +254,36 @@ export const testimonials: Testimonial[] = [
 
 export const faqItems: FaqItem[] = [
   {
+    id: 'faq-gov-1',
+    category: 'Geral',
+    question: 'O FarmaFlow substitui o meu sistema de gestão (ERP)?',
+    answer: 'Não. O foco do FarmaFlow é organizar e acelerar o canal de vendas digital da sua farmácia no WhatsApp. Ele opera em sincronia com o seu sistema atual para atualizar produtos, preços e estoque, conforme a compatibilidade técnica.'
+  },
+  {
+    id: 'faq-gov-2',
+    category: 'Vendas',
+    question: 'Os pedidos continuam chegando diretamente no WhatsApp da farmácia?',
+    answer: 'Sim! O cliente navega no catálogo online com fotos e preços atualizados, monta o carrinho e clica em finalizar. O FarmaFlow gera o pedido totalmente formatado com nome do cliente, itens, quantidades, valores e endereço de entrega direto no WhatsApp do balcão para sua equipe só aprovar.'
+  },
+  {
+    id: 'faq-gov-3',
+    category: 'Integração',
+    question: 'Funciona com o sistema que já uso no balcão da farmácia?',
+    answer: 'A integração depende da estrutura e dos acessos do seu software de farmácia. Durante a demonstração inicial, avaliamos o seu sistema para garantir a melhor opção de sincronização e importação ágil do seu catálogo.'
+  },
+  {
+    id: 'faq-gov-4',
+    category: 'Vendas',
+    question: 'O catálogo pode ser acessado pelo cliente fora do horário de funcionamento?',
+    answer: 'Sim! O link do catálogo fica 100% online 24 horas por dia para o cliente explorar produtos e montar pedidos. A confirmação, o atendimento e o despacho da entrega seguem rigorosamente o horário de expediente e as regras comerciais da sua drogaria.'
+  },
+  {
+    id: 'faq-gov-5',
+    category: 'Receitas',
+    question: 'O FarmaFlow faz atendimento farmacêutico ou dispensação automática?',
+    answer: 'Não. A plataforma agiliza a visualização do catálogo e a triagem das prescrições. Orientações sobre posologia, avaliação sanitária de receitas médicas e decisões clínicas de dispensação permanecem sob responsabilidade exclusiva do farmacêutico habilitado.'
+  },
+  {
     id: 'faq-1',
     category: 'Receitas',
     question: 'Como funciona o Módulo de Receitas para Medicamentos Controlados?',
@@ -265,39 +296,96 @@ export const faqItems: FaqItem[] = [
     answer: 'No Painel de Pedidos do FarmaFlow, cada pedido com receita exibe um badge em tempo real: "Receita Pendente", "Receita Aprovada" ou "Receita Reprovada". Com apenas 1 clique, o farmacêutico valida a dosagem, CRM e validade da prescrição, atualizando o status do cliente e gerando a mensagem automática de confirmação.'
   },
   {
-    id: 'faq-3',
-    category: 'Integração',
-    question: 'O que é o Agente Desktop e como ele garante a estabilidade?',
-    answer: 'O Agente Desktop é um utilitário ultraleve instalado no computador do balcão da farmácia que roda em segundo plano. Ele monitora a conexão em tempo real, sincroniza alterações de preços e ofertas sem lentidão e garante que o catálogo esteja 100% online mesmo em conexões oscilantes.'
-  },
-  {
-    id: 'faq-4',
-    category: 'Vendas',
-    question: 'A Oferta Relâmpago realmente encerra quando o cronômetro zera?',
-    answer: 'Sim! Utilizamos arquitetura Realtime sincronizada. Quando o cronômetro regressivo atinge zero, o preço volta imediatamente ao valor original ou o produto sai da vitrine de destaque, sem que o cliente consiga burlar ou comprar com preço promocional vencido.'
-  },
-  {
-    id: 'faq-5',
-    category: 'Vendas',
-    question: 'Como o cliente faz para enviar o pedido para o WhatsApp?',
-    answer: 'O cliente navega pelo catálogo com visualização rápida, seleciona variações (miligramas, dosagens, marcas), aplica cupons se houver e clica em "Finalizar Pedido". O FarmaFlow abre automaticamente o WhatsApp com uma mensagem padronizada contendo a lista dos itens, quantidades, valores e endereço de entrega.'
-  },
-  {
-    id: 'faq-6',
-    category: 'Planos',
-    question: 'O que está incluso no Plano Premium com Agente de IA e Chat por R$ 297/mês?',
-    answer: 'O Plano Premium inclui todas as funcionalidades da plataforma (catálogo ilimitado, ofertas relâmpago, cupons, suporte prioritário) e adiciona com exclusividade o Chat Inteligente 24/7 e o nosso Agente de IA Farmacêutico. O robô inteligente responde clientes no WhatsApp e no site em tempo real, tira dúvidas de saúde e posologia, recomenda produtos de forma persuasiva (cross-sell) e monta orçamentos em segundos.'
-  },
-  {
     id: 'faq-7',
     category: 'Planos',
-    question: 'Preciso pagar comissão sobre as vendas da minha farmácia?',
+    question: 'Preciso pagar comissão ou porcentagem sobre as vendas da farmácia?',
     answer: 'Não! O FarmaFlow trabalha com modelo de assinatura mensal fixa, sem nenhuma taxa oculta ou porcentagem sobre suas vendas. Todo o lucro das vendas é 100% da sua farmácia.'
   },
   {
     id: 'faq-8',
     category: 'Geral',
-    question: 'Quanto tempo leva para colocar o catálogo da minha drogaria no ar?',
-    answer: 'Nossa equipe de suporte assistido realiza a ativação e configuração inicial no mesmo dia. Você já recebe o link personalizado da sua farmácia pronto para divulgar no Instagram, Google Meu Negócio, WhatsApp e materiais impressos.'
+    question: 'Como conheço os planos e começo a usar na minha loja?',
+    answer: 'Basta clicar no botão de demonstração para falar diretamente com nossa equipe técnica pelo WhatsApp. Configuramos seu catálogo, orientamos sua equipe e deixamos seu canal de vendas pronto para faturar.'
+  }
+];
+
+export const painPointsData: PainPointItem[] = [
+  {
+    id: 'pain-1',
+    number: '01 / ATENDIMENTO',
+    category: 'Atendimento Lento',
+    title: 'A mesma pergunta. De novo. E de novo.',
+    description: 'Consultar preço no sistema, procurar produto no estoque e digitar respostas consome o tempo que sua equipe deveria dedicar a orientar e vender mais.',
+    chatQuote: '“Tem esse produto? Quanto custa?”'
+  },
+  {
+    id: 'pain-2',
+    number: '02 / OPERAÇÃO',
+    category: 'Pedidos Desorganizados',
+    title: 'Pedido espalhado em várias mensagens.',
+    description: 'Áudios, fotos soltas e informações picadas tornam a conferência cansativa, aumentam o tempo de balcão e causam esquecimento de itens.',
+    chatQuote: '“Ah, coloca mais esse aqui também...”'
+  },
+  {
+    id: 'pain-3',
+    number: '03 / OPORTUNIDADE',
+    category: 'Vendas Perdidas',
+    title: 'Quem não vê, não lembra de comprar.',
+    description: 'Quando o cliente pergunta só por um remédio, itens de conveniência, vitaminas e cuidados pessoais do seu mix passam totalmente despercebidos.',
+    chatQuote: '“Não sabia que vocês vendiam isso!”'
+  }
+];
+
+export const howItWorksData: HowItWorksStep[] = [
+  {
+    step: '01',
+    title: 'O cliente acessa seu catálogo',
+    description: 'Pelo link na bio do Instagram, mensagem automática de saudação no WhatsApp ou QR Code impresso no balcão. Sem necessidade de baixar aplicativo.',
+    highlight: 'Sem cadastro obrigatório para navegar'
+  },
+  {
+    step: '02',
+    title: 'Escolhe os produtos com calma',
+    description: 'Com fotos nítidas, preços atualizados em tempo real, categorias organizadas e busca rápida. O cliente descobre e adiciona mais do que pediria no balcão.',
+    highlight: 'Estimula a compra de mais itens do seu mix'
+  },
+  {
+    step: '03',
+    title: 'Envia o pedido pronto no WhatsApp',
+    description: 'Com endereço de entrega, forma de pagamento e até foto da receita anexada. Sua equipe só confere, separa os produtos e combina a entrega.',
+    highlight: 'Menos tempo digitando, mais tempo vendendo'
+  }
+];
+
+export const comparisonRowsData: ComparisonRow[] = [
+  {
+    routine: 'Consulta de produtos e preços',
+    manual: 'Depende de perguntas e respostas demoradas mensagem por mensagem',
+    farmaflow: 'Cliente consulta o catálogo online com fotos e preços na hora'
+  },
+  {
+    routine: 'Montagem do pedido',
+    manual: 'Informações picadas em áudios, fotos e mensagens soltas',
+    farmaflow: 'Itens reunidos em um carrinho pronto com total calculado'
+  },
+  {
+    routine: 'Preços e estoque',
+    manual: 'Atualizações manuais repetitivas e risco de preço desatualizado',
+    farmaflow: 'Sincronização com integração configurada para sua drogaria'
+  },
+  {
+    routine: 'Visibilidade do mix de produtos',
+    manual: 'Limitada ao único item que o cliente lembrou de perguntar',
+    farmaflow: 'Mix completo exposto para o cliente adicionar itens por impulso'
+  },
+  {
+    routine: 'Controle de receitas controladas',
+    manual: 'Fotos perdidas na conversa com risco sanitário e retrabalho',
+    farmaflow: 'Módulo SNGPC com upload no carrinho e validação farmacêutica'
+  },
+  {
+    routine: 'Análise das vendas',
+    manual: 'Informações dispersas e sem histórico claro no WhatsApp',
+    farmaflow: 'Painel com produtos mais vendidos, clientes VIPs e curva ABC'
   }
 ];

@@ -21,6 +21,21 @@ export const FeatureShowcase: React.FC = () => {
 
   const features = [
     {
+      id: 'inteligencia-vendas',
+      title: 'Painel de Inteligência de Vendas',
+      category: 'Gestão & Decisão',
+      icon: BarChart3,
+      iconColor: 'text-emerald-400',
+      bgGlow: 'bg-emerald-500/10',
+      borderColor: 'border-emerald-500/40',
+      desc: 'Saiba com precisão quais produtos mais vendem, os horários de maior movimento no WhatsApp e identifique seus clientes VIPs com curva ABC para ações de fidelização.',
+      bullets: [
+        'Ranking dos mais vendidos com barras de volume',
+        'Visão de clientes frequentes e ticket médio',
+        'Filtros por Hoje, Últimos 7 dias e Mês'
+      ]
+    },
+    {
       id: 'agente-ia',
       title: 'Agente de IA & Chat 24/7',
       category: 'Exclusivo Premium',
@@ -113,7 +128,7 @@ export const FeatureShowcase: React.FC = () => {
   ];
 
   return (
-    <section id="funcionalidades" className="py-24 relative overflow-hidden">
+    <section id="recursos" className="py-24 relative overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

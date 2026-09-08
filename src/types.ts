@@ -72,3 +72,25 @@ export interface PrescriptionOrder {
   timestamp: string;
   total: number;
 }
+
+export interface PainPointItem {
+  id: string;
+  number: string;
+  category: string;
+  title: string;
+  description: string;
+  chatQuote: string;
+}
+
+export interface ComparisonRow {
+  routine: string;
+  manual: string;
+  farmaflow: string;
+}
+
+export interface HowItWorksStep {
+  step: string;
+  title: string;
+  description: string;
+  highlight?: string;
+}

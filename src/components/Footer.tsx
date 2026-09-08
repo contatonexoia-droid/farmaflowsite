@@ -1,6 +1,6 @@
 import React from 'react';
 import { MessageCircle, Heart, ArrowUp } from 'lucide-react';
-import { getWhatsAppLink } from '../data/content';
+import { getWhatsAppLink, WHATSAPP_DISPLAY } from '../data/content';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -42,10 +42,11 @@ export const Footer: React.FC = () => {
               Navegação
             </h4>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li><a href="#funcionalidades" className="hover:text-cyan-400 transition-colors">Funcionalidades</a></li>
+              <li><a href="#solucao" className="hover:text-cyan-400 transition-colors">O Problema</a></li>
+              <li><a href="#comparativo" className="hover:text-cyan-400 transition-colors">Comparativo Rotina</a></li>
+              <li><a href="#como-funciona" className="hover:text-cyan-400 transition-colors">Como Funciona</a></li>
               <li><a href="#modulo-receitas" className="hover:text-cyan-400 transition-colors">Módulo de Receitas</a></li>
-              <li><a href="#comparativo" className="hover:text-cyan-400 transition-colors">Caos vs FarmaFlow</a></li>
-              <li><a href="#calculadora" className="hover:text-cyan-400 transition-colors">Calculadora ROI</a></li>
+              <li><a href="#recursos" className="hover:text-cyan-400 transition-colors">Recursos & Painel</a></li>
               <li><a href="#planos" className="hover:text-cyan-400 transition-colors">Planos & Preços</a></li>
               <li><a href="#faq" className="hover:text-cyan-400 transition-colors">FAQ</a></li>
             </ul>
@@ -67,7 +68,7 @@ export const Footer: React.FC = () => {
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-emerald-400 hover:text-white font-mono text-xs transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp: (22) 98155-2881</span>
+              <span>WhatsApp: {WHATSAPP_DISPLAY}</span>
             </a>
           </div>
 

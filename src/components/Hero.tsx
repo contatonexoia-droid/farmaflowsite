@@ -64,31 +64,31 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
         {/* Animated Pill Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-cyan-500/30 text-xs sm:text-sm font-mono text-cyan-300 mb-8 backdrop-blur-md shadow-lg shadow-cyan-500/10 hover:border-cyan-400/50 transition-colors">
-          <Zap className="w-4 h-4 text-emerald-400 animate-pulse" />
-          <span className="font-semibold tracking-wide">CATÁLOGO INTELIGENTE & AUTOMAÇÃO DE BALCÃO</span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-emerald-500/30 text-xs sm:text-sm font-mono text-emerald-300 mb-8 backdrop-blur-md shadow-lg shadow-emerald-500/10 hover:border-emerald-400/50 transition-colors">
+          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span className="font-semibold tracking-wide uppercase">O Próximo Passo da Sua Farmácia</span>
           <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
-          <span className="text-slate-400 hidden sm:inline-block">Versão 3.0 Realtime</span>
+          <span className="text-slate-400 hidden sm:inline-block">Vendas pelo WhatsApp</span>
         </div>
 
         {/* Main Title */}
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1] max-w-5xl mx-auto font-heading text-white">
-          Pare de Perder Vendas por <br className="hidden sm:inline" />
-          <span className="bg-gradient-to-r from-white via-cyan-300 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">
-            Demora no Atendimento
+          Seu WhatsApp Não Precisa Ser <br className="hidden sm:inline" />
+          <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent drop-shadow-sm">
+            Um Balcão Lotado.
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
-          Transforme o WhatsApp da sua drogaria em uma máquina de vendas. Catálogo digital ultrarrápido com <span className="text-cyan-300 font-semibold">Módulo de Receitas Controladas</span>, ofertas relâmpago dinâmicas e orçamentos fechados em menos de 10 segundos.
+          Transforme perguntas repetidas em pedidos organizados. Dê ao cliente liberdade para escolher e à sua equipe tempo para atender melhor.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <a
             id="hero-primary-whatsapp-btn"
-            href={getWhatsAppLink('Olá Evandro! Quero ver uma demonstração prática do FarmaFlow para a minha farmácia.')}
+            href={getWhatsAppLink('Olá! Quero conhecer o FarmaFlow e organizar as vendas no WhatsApp da minha farmácia.')}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto relative group overflow-hidden rounded-full p-px font-bold text-base sm:text-lg transition-all duration-300 shadow-2xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105"
@@ -96,42 +96,42 @@ export const Hero: React.FC = () => {
             <span className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-400 rounded-full animate-pulse"></span>
             <span className="relative block px-8 py-4 bg-slate-950 rounded-full text-white font-heading font-bold flex items-center justify-center gap-3 transition-colors group-hover:bg-transparent">
               <MessageCircle className="w-6 h-6 text-emerald-400 group-hover:text-white transition-colors" />
-              <span>Falar com Consultor no WhatsApp</span>
+              <span>Quero Vender com Mais Organização</span>
               <ArrowRight className="w-5 h-5 text-cyan-400 group-hover:translate-x-1 transition-transform" />
             </span>
           </a>
 
           <a
-            href="#modulo-receitas"
+            href="#demonstracao"
             className="w-full sm:w-auto px-7 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-500/50 text-slate-200 hover:text-white font-semibold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 backdrop-blur-md"
           >
             <Sparkles className="w-4 h-4 text-cyan-400" />
-            <span>Ver Módulo de Receitas</span>
+            <span>Veja na Prática ↓</span>
           </a>
         </div>
 
-        {/* Floating Stat Micro-Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 mb-12 text-xs sm:text-sm text-slate-300 font-medium">
-          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/70 border border-slate-800 backdrop-blur-sm">
-            <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-            <span>Atendimento em <strong>10s</strong></span>
+        {/* Hero Trust Points */}
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-7 mb-12 text-xs sm:text-sm text-slate-300 font-medium">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span>Catálogo com a sua marca</span>
           </div>
-          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/70 border border-slate-800 backdrop-blur-sm">
-            <ShieldCheck className="w-4 h-4 text-cyan-400" />
-            <span>Validação de <strong>Controlados & SNGPC</strong></span>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span>Pedidos organizados no WhatsApp</span>
           </div>
-          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/70 border border-slate-800 backdrop-blur-sm">
-            <TrendingUp className="w-4 h-4 text-emerald-400" />
-            <span><strong>+38%</strong> Ticket Médio</span>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span>Estoque e preços sincronizados</span>
           </div>
-          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/70 border border-slate-800 backdrop-blur-sm">
-            <Laptop className="w-4 h-4 text-purple-400" />
-            <span>Agente Desktop <strong>Sync 0.2s</strong></span>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span>Módulo de receitas SNGPC</span>
           </div>
         </div>
 
         {/* INTERACTIVE PRODUCT SIMULATOR */}
-        <div id="interactive-demo-container" className="relative max-w-5xl mx-auto">
+        <div id="demonstracao" className="relative max-w-5xl mx-auto scroll-mt-28">
           {/* Subtle Outer Glow */}
           <div className="absolute -inset-1.5 bg-gradient-to-r from-cyan-500/25 via-emerald-500/20 to-teal-500/25 rounded-3xl blur-2xl opacity-75 pointer-events-none"></div>
 
@@ -675,6 +675,22 @@ export const Hero: React.FC = () => {
               </div>
             )}
 
+          </div>
+        </div>
+
+        {/* Hero Footer Strip from Attachment */}
+        <div className="mt-14 pt-6 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+          <span className="text-emerald-400 font-bold uppercase tracking-wider text-center md:text-left">
+            FEITO PARA A ROTINA REAL DAS DROGARIAS
+          </span>
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-slate-300">
+            <span>Catálogo digital</span>
+            <span className="text-emerald-400">✦</span>
+            <span>Carrinho de compras</span>
+            <span className="text-emerald-400">✦</span>
+            <span>Estoque integrado</span>
+            <span className="text-emerald-400">✦</span>
+            <span>Inteligência de vendas</span>
           </div>
         </div>
 
