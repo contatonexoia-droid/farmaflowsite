@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Explicitly ensure Googlebot and Googlebot-Image / Googlebot-Favicon have full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Favicon
+Allow: /
+
+Sitemap: https://farmaflow.site/sitemap.xml

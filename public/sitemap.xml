@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://farmaflow.site/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://farmaflow.site/logo-512.png</image:loc>
+      <image:title>FarmaFlow - Logo Oficial</image:title>
+      <image:caption>Catálogo Digital e Automação de WhatsApp para Farmácias e Drogarias</image:caption>
+    </image:image>
+  </url>
+</urlset>

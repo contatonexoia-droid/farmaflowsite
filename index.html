@@ -14,16 +14,20 @@
     <meta name="theme-color" content="#030712">
     <link rel="canonical" href="https://farmaflow.site">
 
-    <!-- Favicon & App Icons for Google Search Results -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23030712'/%3E%3Cpath d='M8 16h4l2 6 4-16 2 10h4' stroke='%2306B6D4' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
-    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23030712'/%3E%3Cpath d='M8 16h4l2 6 4-16 2 10h4' stroke='%2306B6D4' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='%23030712'/%3E%3Cpath d='M48 96h24l12 36 24-96 12 60h24' stroke='%2306B6D4' stroke-width='14' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <!-- Google Search Favicon & App Icons (Standard & Multiples of 48px) -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- Open Graph / Facebook / WhatsApp Preview -->
     <meta property="og:site_name" content="FarmaFlow">
     <meta property="og:title" content="FarmaFlow | Catálogo Digital & Automação de WhatsApp para Farmácias">
     <meta property="og:description" content="Elimine a lentidão no atendimento da sua drogaria. Catálogo digital interativo com validação de receitas, ofertas relâmpago e envio automático de pedidos para o seu WhatsApp.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="og:image" content="https://farmaflow.site/logo-512.png">
     <meta property="og:url" content="https://farmaflow.site">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
@@ -32,7 +36,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FarmaFlow | Catálogo Digital & Automação de WhatsApp para Farmácias">
     <meta name="twitter:description" content="Elimine a lentidão no atendimento da sua drogaria. Catálogo digital interativo com validação de receitas, ofertas relâmpago e envio automático de pedidos para o seu WhatsApp.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta name="twitter:image" content="https://farmaflow.site/logo-512.png">
 
     <!-- JSON-LD Structured Data for Google (SEO Rich Snippets) -->
     <script type="application/ld+json">
@@ -62,9 +66,16 @@
         {
           "@type": "Organization",
           "@id": "https://farmaflow.site/#organization",
-          "name": "FarmaFlow by nexoIa",
+          "name": "FarmaFlow",
+          "alternateName": "FarmaFlow by nexoIa",
           "url": "https://farmaflow.site",
-          "logo": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://farmaflow.site/logo-512.png",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://farmaflow.site/logo-512.png",
           "founder": {
             "@type": "Person",
             "name": "Evandro Luiz Cabral da Silva",
