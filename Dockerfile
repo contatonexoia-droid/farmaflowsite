@@ -1,8 +1,15 @@
 # Estágio 1: Instalação e Build
 FROM node:18-alpine AS builder
 WORKDIR /app
+
+# Instala dependências do sistema necessárias para pacotes nativos
+RUN apk add --no-cache libc6-compat
+
 COPY package*.json ./
-RUN npm install
+
+# Instala incluindo dependências opcionais para o Tailwind funcionar
+RUN npm install --include=optional
+
 COPY . .
 RUN npm run build
 
