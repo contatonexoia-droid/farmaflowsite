@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
     { label: 'Como Funciona', href: '#como-funciona' },
     { label: 'Módulo de Receitas', href: '#modulo-receitas' },
     { label: 'Comparativo', href: '#comparativo' },
-    { label: 'Dúvidas', href: '#duvidas' },
+    { label: 'Dúvidas', href: '#faq' },
   ];
 
   return (
@@ -28,6 +28,7 @@ export const Header: React.FC = () => {
       <div className={`mx-auto transition-all duration-300 px-4 sm:px-6 lg:px-8 ${isScrolled ? 'pt-2.5 max-w-6xl' : 'pt-4 max-w-7xl'}`}>
         <nav 
           id="main-navigation"
+          aria-label="Navegação Principal"
           className={`glass-panel rounded-full transition-all duration-300 flex items-center justify-between border ${
             isScrolled 
               ? 'py-2.5 px-5 bg-slate-950/90 shadow-2xl shadow-cyan-950/40 border-cyan-500/20 backdrop-blur-2xl' 
@@ -35,13 +36,12 @@ export const Header: React.FC = () => {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
+          <a href="#" className="flex items-center gap-2.5 group" aria-label="FarmaFlow - Página Inicial">
             <div className="h-9 sm:h-10 flex items-center">
               <img 
-                src="https://i.postimg.cc/pVzNnT3b/file-0000000000cc820eb03e0bab6fe634f2.png" 
-                alt="FarmaFlow Logo" 
+                src="/logo.png" 
+                alt="FarmaFlow - Catálogo Digital e Automação de WhatsApp para Farmácias" 
                 className="h-8 sm:h-9 w-auto max-w-[140px] sm:max-w-[170px] object-contain transition-transform duration-300 group-hover:scale-105"
-                referrerPolicy="no-referrer"
               />
             </div>
             <span className="flex h-2 w-2 relative self-center">

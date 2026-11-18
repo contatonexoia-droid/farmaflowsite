@@ -44,7 +44,7 @@ export interface FaqItem {
   id: string;
   question: string;
   answer: string;
-  category: 'Geral' | 'Receitas' | 'Integração' | 'Vendas' | 'Planos';
+  category: 'Geral' | 'Receitas' | 'Integração' | 'Vendas' | 'Planos' | 'IA & Automação';
 }
 
 export interface ProductItem {

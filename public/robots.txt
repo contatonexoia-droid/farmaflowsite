@@ -1,7 +1,8 @@
+# FarmaFlow — SEO & Generative Engine Optimization (GEO / AEO)
 User-agent: *
 Allow: /
 
-# Explicitly ensure Googlebot and Googlebot-Image / Googlebot-Favicon have full access
+# Google Search, Images, Favicon & Gemini / Google AI Overviews
 User-agent: Googlebot
 Allow: /
 
@@ -11,4 +12,50 @@ Allow: /
 User-agent: Googlebot-Favicon
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI / ChatGPT Search & Browsing Agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI Search
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude AI
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Microsoft Bing & Copilot
+User-agent: Bingbot
+Allow: /
+
+# Apple Intelligence & Siri
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Sitemaps & AI Knowledge Base
 Sitemap: https://farmaflow.site/sitemap.xml
+# LLMs Context Files:
+# https://farmaflow.site/llms.txt
+# https://farmaflow.site/llms-full.txt

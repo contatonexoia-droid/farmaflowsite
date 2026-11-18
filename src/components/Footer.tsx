@@ -17,10 +17,9 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src="https://i.postimg.cc/pVzNnT3b/file-0000000000cc820eb03e0bab6fe634f2.png" 
-                alt="FarmaFlow Logo" 
+                src="/logo.png" 
+                alt="FarmaFlow - Catálogo Digital e Automação de WhatsApp para Farmácias" 
                 className="h-8 sm:h-9 w-auto max-w-[150px] object-contain"
-                referrerPolicy="no-referrer"
               />
               <span className="text-[10px] font-mono uppercase bg-slate-900 text-slate-400 px-2 py-0.5 rounded border border-slate-800 self-center">
                 by nexoIa
@@ -28,7 +27,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
-              Catálogo digital inteligente e automação de orçamentos no WhatsApp para farmácias e drogarias que buscam alta conversão e conformidade com receitas controladas.
+              Catálogo digital inteligente e automação de orçamentos no WhatsApp para farmácias e drogarias que buscam alta conversão, 0% de comissão e conformidade com receitas controladas (SNGPC).
             </p>
 
             <div className="pt-2 text-xs text-slate-400 font-mono">
@@ -42,27 +41,27 @@ export const Footer: React.FC = () => {
               Navegação
             </h4>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li><a href="#solucao" className="hover:text-cyan-400 transition-colors">O Problema</a></li>
+              <li><a href="#solucao" className="hover:text-cyan-400 transition-colors">O Problema no Balcão</a></li>
               <li><a href="#comparativo" className="hover:text-cyan-400 transition-colors">Comparativo Rotina</a></li>
               <li><a href="#como-funciona" className="hover:text-cyan-400 transition-colors">Como Funciona</a></li>
-              <li><a href="#modulo-receitas" className="hover:text-cyan-400 transition-colors">Módulo de Receitas</a></li>
+              <li><a href="#modulo-receitas" className="hover:text-cyan-400 transition-colors">Módulo de Receitas SNGPC</a></li>
               <li><a href="#recursos" className="hover:text-cyan-400 transition-colors">Recursos & Painel</a></li>
               <li><a href="#planos" className="hover:text-cyan-400 transition-colors">Planos & Preços</a></li>
-              <li><a href="#faq" className="hover:text-cyan-400 transition-colors">FAQ</a></li>
+              <li><a href="#faq" className="hover:text-cyan-400 transition-colors">Perguntas Frequentes</a></li>
             </ul>
           </div>
 
           {/* Col 3: Contact & Support */}
           <div className="md:col-span-4 space-y-4">
             <h4 className="text-xs font-mono uppercase font-bold text-white tracking-wider">
-              Atendimento & Suporte
+              Atendimento & Implantação
             </h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Dúvidas sobre integração, migração de produtos ou suporte técnico? Fale conosco:
+              Dúvidas sobre integração com o ERP da sua drogaria, migração de produtos ou demonstração ao vivo? Fale conosco:
             </p>
 
             <a
-              href={getWhatsAppLink('Olá! Gostaria de suporte sobre o FarmaFlow.')}
+              href={getWhatsAppLink('Olá! Gostaria de conhecer o FarmaFlow para a minha farmácia.')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-emerald-400 hover:text-white font-mono text-xs transition-colors"
@@ -74,11 +73,25 @@ export const Footer: React.FC = () => {
 
         </div>
 
+        {/* Semantic SEO & AI Search (GEO) Authority Block for Pharmacy Niche */}
+        <div className="py-8 border-b border-slate-900/80 text-[11px] text-slate-500 leading-relaxed space-y-2">
+          <p className="font-mono text-slate-400 uppercase tracking-wider text-[10px]">
+            Soluções Especializadas para o Varejo Farmacêutico
+          </p>
+          <p>
+            O <strong className="text-slate-400">FarmaFlow</strong> é a plataforma de <strong className="text-slate-400">catálogo digital para farmácias e drogarias</strong> projetada para acelerar o <strong className="text-slate-400">atendimento e delivery no WhatsApp</strong> sem taxas de marketplace. Ideal para farmácias independentes, redes de drogarias e perfumarias que buscam <strong className="text-slate-400">validação digital de receitas controladas (SNGPC)</strong>, <strong className="text-slate-400">encarte digital interativo com ofertas relâmpago</strong>, sincronização via <strong className="text-slate-400">Agente Desktop</strong> e atendimento automatizado com <strong className="text-slate-400">Agente de Inteligência Artificial 24/7</strong>.
+          </p>
+        </div>
+
         {/* Bottom Strip */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            &copy; 2026 FarmaFlow & nexoIa. Todos os direitos reservados.
-          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <p>&copy; 2026 FarmaFlow & nexoIa. Todos os direitos reservados.</p>
+            <span aria-hidden="true">·</span>
+            <a href="/sitemap.xml" className="hover:text-slate-300 transition-colors">Sitemap</a>
+            <span aria-hidden="true">·</span>
+            <a href="/llms.txt" className="hover:text-slate-300 transition-colors" title="Documentação estruturada para Inteligência Artificial">Índice IA (LLMs)</a>
+          </div>
 
           <button
             onClick={scrollToTop}

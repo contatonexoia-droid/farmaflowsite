@@ -254,58 +254,64 @@ export const testimonials: Testimonial[] = [
 
 export const faqItems: FaqItem[] = [
   {
-    id: 'faq-gov-1',
-    category: 'Geral',
-    question: 'O FarmaFlow substitui o meu sistema de gestão (ERP)?',
-    answer: 'Não. O foco do FarmaFlow é organizar e acelerar o canal de vendas digital da sua farmácia no WhatsApp. Ele opera em sincronia com o seu sistema atual para atualizar produtos, preços e estoque, conforme a compatibilidade técnica.'
-  },
-  {
-    id: 'faq-gov-2',
-    category: 'Vendas',
-    question: 'Os pedidos continuam chegando diretamente no WhatsApp da farmácia?',
-    answer: 'Sim! O cliente navega no catálogo online com fotos e preços atualizados, monta o carrinho e clica em finalizar. O FarmaFlow gera o pedido totalmente formatado com nome do cliente, itens, quantidades, valores e endereço de entrega direto no WhatsApp do balcão para sua equipe só aprovar.'
-  },
-  {
-    id: 'faq-gov-3',
-    category: 'Integração',
-    question: 'Funciona com o sistema que já uso no balcão da farmácia?',
-    answer: 'A integração depende da estrutura e dos acessos do seu software de farmácia. Durante a demonstração inicial, avaliamos o seu sistema para garantir a melhor opção de sincronização e importação ágil do seu catálogo.'
-  },
-  {
-    id: 'faq-gov-4',
-    category: 'Vendas',
-    question: 'O catálogo pode ser acessado pelo cliente fora do horário de funcionamento?',
-    answer: 'Sim! O link do catálogo fica 100% online 24 horas por dia para o cliente explorar produtos e montar pedidos. A confirmação, o atendimento e o despacho da entrega seguem rigorosamente o horário de expediente e as regras comerciais da sua drogaria.'
-  },
-  {
-    id: 'faq-gov-5',
-    category: 'Receitas',
-    question: 'O FarmaFlow faz atendimento farmacêutico ou dispensação automática?',
-    answer: 'Não. A plataforma agiliza a visualização do catálogo e a triagem das prescrições. Orientações sobre posologia, avaliação sanitária de receitas médicas e decisões clínicas de dispensação permanecem sob responsabilidade exclusiva do farmacêutico habilitado.'
-  },
-  {
     id: 'faq-1',
     category: 'Receitas',
-    question: 'Como funciona o Módulo de Receitas para Medicamentos Controlados?',
-    answer: 'Quando o cliente adiciona qualquer medicamento classificado como tarja preta, vermelha sob retenção ou controle especial (SNGPC), o FarmaFlow exige automaticamente o anexo da foto ou PDF da receita médica antes de prosseguir com o pedido. A notificação chega imediatamente no WhatsApp do balcão já com o link direto da receita anexada ao pedido formatado.'
+    question: 'Como funciona o Módulo de Receitas para Medicamentos Controlados (SNGPC)?',
+    answer: 'Quando o cliente adiciona qualquer medicamento classificado como tarja preta, tarja vermelha sob retenção ou antimicrobianos sujeitos ao SNGPC, o FarmaFlow exige automaticamente o anexo da foto ou PDF da receita médica antes de finalizar o pedido. A notificação chega imediatamente no WhatsApp do balcão já com o link direto da receita vinculada ao pedido formatado.'
   },
   {
     id: 'faq-2',
     category: 'Receitas',
-    question: 'Como o farmacêutico aprova ou reprova as receitas no sistema?',
-    answer: 'No Painel de Pedidos do FarmaFlow, cada pedido com receita exibe um badge em tempo real: "Receita Pendente", "Receita Aprovada" ou "Receita Reprovada". Com apenas 1 clique, o farmacêutico valida a dosagem, CRM e validade da prescrição, atualizando o status do cliente e gerando a mensagem automática de confirmação.'
+    question: 'Como o farmacêutico aprova ou reprova as receitas médicas no sistema?',
+    answer: 'No Painel de Pedidos do FarmaFlow, cada pedido com receita exibe um status em tempo real: "Receita Pendente", "Receita Aprovada" ou "Receita Reprovada". Com apenas 1 clique, o farmacêutico valida a dosagem, CRM e validade da prescrição, atualizando o status do cliente e gerando a mensagem automática de confirmação no WhatsApp.'
+  },
+  {
+    id: 'faq-gov-2',
+    category: 'Vendas',
+    question: 'Como o FarmaFlow aumenta as vendas e o delivery da farmácia no WhatsApp?',
+    answer: 'Em vez de o balconista perder 10 a 15 minutos digitando preço por preço, o cliente navega no catálogo digital interativo com fotos nítidas, ofertas relâmpago com cronômetro em tempo real, cupons e vitrine de perfumaria, vitaminas e dermocosméticos. O cliente compra mais itens por impulso e envia o carrinho pronto e calculado direto para o WhatsApp da drogaria.'
+  },
+  {
+    id: 'faq-ia-1',
+    category: 'IA & Automação',
+    question: 'Como funciona o Chat Inteligente 24/7 e o Agente de IA para farmácias?',
+    answer: 'Disponível no Plano Premium, o Agente de IA do FarmaFlow é treinado especificamente para a rotina de farmácia e balcão. Ele responde clientes em menos de 1 segundo no WhatsApp, 24 horas por dia, ajuda a localizar medicamentos e produtos no catálogo e sugere itens complementares (cross-sell) para aumentar o ticket médio da drogaria.'
   },
   {
     id: 'faq-7',
     category: 'Planos',
-    question: 'Preciso pagar comissão ou porcentagem sobre as vendas da farmácia?',
-    answer: 'Não! O FarmaFlow trabalha com modelo de assinatura mensal fixa, sem nenhuma taxa oculta ou porcentagem sobre suas vendas. Todo o lucro das vendas é 100% da sua farmácia.'
+    question: 'Preciso pagar comissão ou porcentagem sobre as vendas da farmácia como no iFood?',
+    answer: 'Não! Diferente de marketplaces e aplicativos de entrega que cobram até 27% de taxa, o FarmaFlow trabalha com assinatura mensal fixa (a partir de R$ 159/mês no plano anual) e cobra 0% de comissão sobre os pedidos. Todo o lucro das vendas pelo catálogo e WhatsApp é 100% da sua farmácia.'
+  },
+  {
+    id: 'faq-gov-1',
+    category: 'Integração',
+    question: 'O FarmaFlow substitui o meu sistema de gestão (ERP) de balcão?',
+    answer: 'Não. O foco do FarmaFlow é organizar e acelerar o canal de vendas digital da sua farmácia no WhatsApp. Ele opera em sincronia com o seu sistema atual através do Agente Desktop para atualizar produtos, preços e estoque com 99,9% de estabilidade.'
+  },
+  {
+    id: 'faq-gov-3',
+    category: 'Integração',
+    question: 'O que é o Agente Desktop e funciona com o sistema que já uso na drogaria?',
+    answer: 'O Agente Desktop é um aplicativo leve que roda em segundo plano no computador da farmácia para sincronizar produtos e preços sem travamentos. Durante a ativação inicial, nossa equipe técnica avalia o seu software de farmácia para configurar a importação e sincronização ideal do seu catálogo.'
+  },
+  {
+    id: 'faq-gov-4',
+    category: 'Vendas',
+    question: 'O catálogo digital pode receber pedidos fora do horário de funcionamento?',
+    answer: 'Sim! O link do catálogo fica 100% online 24 horas por dia (na bio do Instagram, QR Code ou mensagem de saudação do WhatsApp) para o cliente montar pedidos a qualquer hora. A validação farmacêutica e a entrega seguem as regras e o horário de funcionamento da sua drogaria.'
+  },
+  {
+    id: 'faq-gov-5',
+    category: 'Receitas',
+    question: 'O FarmaFlow faz dispensação automática de medicamentos?',
+    answer: 'Não. A plataforma agiliza a vitrine digital e a triagem das prescrições no WhatsApp. Orientações clínicas, avaliação sanitária de receitas médicas e decisões de dispensação permanecem sob responsabilidade exclusiva do farmacêutico habilitado da drogaria.'
   },
   {
     id: 'faq-8',
-    category: 'Geral',
-    question: 'Como conheço os planos e começo a usar na minha loja?',
-    answer: 'Basta clicar no botão de demonstração para falar diretamente com nossa equipe técnica pelo WhatsApp. Configuramos seu catálogo, orientamos sua equipe e deixamos seu canal de vendas pronto para faturar.'
+    category: 'Planos',
+    question: 'Como faço para testar ou implantar o FarmaFlow na minha farmácia hoje?',
+    answer: 'Basta escolher um dos planos na página ou clicar para falar diretamente conosco no WhatsApp (22) 98155-2881. Nossa equipe configura o seu catálogo, orienta seus balconistas e deixa sua farmácia pronta para vender mais no mesmo dia.'
   }
 ];
 

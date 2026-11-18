@@ -7,7 +7,7 @@ export const FaqSection: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('Todos');
 
-  const categories = ['Todos', 'Receitas', 'Vendas', 'Integração', 'Planos'];
+  const categories = ['Todos', 'Receitas', 'Vendas', 'IA & Automação', 'Integração', 'Planos'];
 
   const filteredItems = faqItems.filter((item) => {
     const matchesSearch = item.question.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -21,7 +21,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 relative overflow-hidden">
+    <section id="faq" className="py-24 relative overflow-hidden" itemScope itemType="https://schema.org/FAQPage">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -36,7 +36,7 @@ export const FaqSection: React.FC = () => {
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Tudo o que você precisa saber sobre o catálogo, validação de receitas e ativação na sua drogaria.
+            Tudo o que você precisa saber sobre o catálogo digital, validação de receitas controladas, Agente de IA e ativação na sua drogaria.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export const FaqSection: React.FC = () => {
             <Search className="w-4 h-4 text-slate-500 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Buscar dúvida (Ex: receitas, valores, WhatsApp, Agente Desktop)..."
+              placeholder="Buscar dúvida (Ex: receitas, comissão, WhatsApp, Agente de IA)..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 focus:border-cyan-500/60 focus:outline-none text-xs sm:text-sm text-slate-200 placeholder:text-slate-500 transition-colors"
@@ -85,21 +85,25 @@ export const FaqSection: React.FC = () => {
               return (
                 <div
                   key={item.id}
+                  itemScope
+                  itemProp="mainEntity"
+                  itemType="https://schema.org/Question"
                   className={`glass-card rounded-2xl border transition-all overflow-hidden ${
                     isOpen ? 'border-cyan-500/40 bg-slate-950/90 shadow-md shadow-cyan-950/20' : 'border-slate-800/80 bg-slate-950/60'
                   }`}
                 >
                   <button
                     onClick={() => toggleAccordion(item.id)}
+                    aria-expanded={isOpen}
                     className="w-full px-6 py-4.5 text-left flex items-center justify-between gap-4"
                   >
                     <div className="flex items-center gap-3">
                       <span className="text-[10px] font-mono uppercase bg-slate-900 text-cyan-400 px-2 py-0.5 rounded border border-slate-800 hidden sm:inline-block">
                         {item.category}
                       </span>
-                      <span className="font-bold text-xs sm:text-sm text-white font-heading">
+                      <h3 itemProp="name" className="font-bold text-xs sm:text-sm text-white font-heading">
                         {item.question}
-                      </span>
+                      </h3>
                     </div>
 
                     <div className={`w-7 h-7 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 shrink-0 transition-transform duration-300 ${
@@ -109,11 +113,14 @@ export const FaqSection: React.FC = () => {
                     </div>
                   </button>
 
-                  {isOpen && (
-                    <div className="px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60">
-                      {item.answer}
-                    </div>
-                  )}
+                  <div
+                    itemScope
+                    itemProp="acceptedAnswer"
+                    itemType="https://schema.org/Answer"
+                    className={isOpen ? 'px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 block' : 'sr-only'}
+                  >
+                    <div itemProp="text">{item.answer}</div>
+                  </div>
                 </div>
               );
             })

@@ -3,13 +3,25 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://farmaflow.site/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://farmaflow.site/logo-512.png</image:loc>
-      <image:title>FarmaFlow - Logo Oficial</image:title>
-      <image:caption>Catálogo Digital e Automação de WhatsApp para Farmácias e Drogarias</image:caption>
+      <image:title>FarmaFlow - Catálogo Digital e Automação de WhatsApp para Farmácias</image:title>
+      <image:caption>Sistema de catálogo digital interativo, módulo de receitas controladas SNGPC, ofertas relâmpago e agente de IA para farmácias e drogarias.</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://farmaflow.site/llms.txt</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://farmaflow.site/llms-full.txt</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
